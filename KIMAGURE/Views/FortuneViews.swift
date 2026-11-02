@@ -208,53 +208,107 @@ private struct FortuneCardView: View {
     let mission: DailyMission?
 
     var body: some View {
-        GeometryReader { proxy in
-            VStack(spacing: 24) {
-                Text(card.title.uppercased())
-                    .font(.system(.caption, design: .serif, weight: .semibold))
-                    .tracking(2.5)
-                Spacer()
-                if card.kind == .cover {
-                    Text(formattedDate).font(.system(.subheadline, design: .serif))
-                }
-                Text(card.body)
-                    .font(.system(size: card.kind == .cover ? 27 : 24, design: .serif))
-                    .multilineTextAlignment(.center)
-                    .lineSpacing(9)
-                    .minimumScaleFactor(0.72)
-                if let mission {
-                    Text(mission.difficulty.label)
-                        .font(.system(.caption2, design: .serif))
-                        .tracking(2)
-                        .padding(.top, 8)
-                }
-                Spacer()
+        VStack(spacing: 0) {
+            CardLanguageSection(
+                title: card.title,
+                text: card.body,
+                detail: card.kind == .cover ? formattedJapaneseDate : nil,
+                languageCode: "ja-JP",
+                textSize: card.kind == .cover ? 25 : 22
+            )
+
+            HStack(spacing: 12) {
+                Rectangle().frame(height: 0.7)
                 Text(String(format: "%02d", card.order))
                     .font(.system(.caption2, design: .serif))
+                Rectangle().frame(height: 0.7)
             }
-            .padding(.horizontal, 30)
-            .padding(.vertical, 34)
-            .frame(width: proxy.size.width, height: proxy.size.height)
-            .overlay(alignment: .bottomTrailing) {
-                if mission?.isCompleted == true { CompletedStamp().padding(24) }
-            }
+            .foregroundStyle(FortuneStyle.ink.opacity(0.55))
+            .padding(.horizontal, 24)
+
+            CardLanguageSection(
+                title: card.englishTitle,
+                text: card.englishBody,
+                detail: card.kind == .cover ? formattedEnglishDate : nil,
+                languageCode: "en-US",
+                textSize: card.kind == .cover ? 23 : 20,
+                showsCompletedStamp: mission?.isCompleted == true
+            )
         }
         .frame(maxWidth: 430, maxHeight: 620)
         .background(FortuneStyle.card)
         .clipShape(RoundedRectangle(cornerRadius: 8))
         .overlay(RoundedRectangle(cornerRadius: 8).stroke(FortuneStyle.ink.opacity(0.75), lineWidth: 0.8))
         .shadow(color: .black.opacity(0.12), radius: 12, y: 7)
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(card.order)枚目、\(card.title)、\(card.body)")
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("\(card.order)枚目のカード")
     }
 
-    private var formattedDate: String {
+    private var date: Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-        guard let date = formatter.date(from: dateKey) else { return dateKey }
+        return formatter.date(from: dateKey)
+    }
+
+    private var formattedJapaneseDate: String {
+        guard let date else { return dateKey }
+        let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "ja_JP")
         formatter.dateFormat = "yyyy年M月d日"
         return formatter.string(from: date)
+    }
+
+    private var formattedEnglishDate: String {
+        guard let date else { return dateKey }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+        formatter.dateFormat = "MMMM d, yyyy"
+        return formatter.string(from: date)
+    }
+}
+
+private struct CardLanguageSection: View {
+    let title: String
+    let text: String
+    let detail: String?
+    let languageCode: String
+    let textSize: CGFloat
+    var showsCompletedStamp = false
+
+    var bodyContent: some View {
+        VStack(spacing: 14) {
+            Text(title.uppercased())
+                .font(.system(.caption, design: .serif, weight: .semibold))
+                .tracking(2)
+            Spacer(minLength: 8)
+            if let detail {
+                Text(detail)
+                    .font(.system(.caption, design: .serif))
+            }
+            Text(text)
+                .font(.system(size: textSize, design: .serif))
+                .multilineTextAlignment(.center)
+                .lineSpacing(6)
+            Spacer(minLength: 8)
+            if showsCompletedStamp {
+                CompletedStamp()
+                    .padding(.bottom, 4)
+            }
+        }
+        .frame(maxWidth: .infinity, minHeight: 250)
+        .padding(.horizontal, 26)
+        .padding(.vertical, 22)
+    }
+
+    var body: some View {
+        ScrollView {
+            bodyContent
+        }
+        .scrollIndicators(.hidden)
+        .frame(maxHeight: .infinity)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(title)。\(detail.map { "\($0)。" } ?? "")\(text)")
+        .environment(\.locale, Locale(identifier: languageCode))
     }
 }
 
@@ -336,6 +390,10 @@ private struct MissionRow: View {
                         .tracking(1.5)
                     Text(mission.text)
                         .font(.system(.body, design: .serif))
+                        .multilineTextAlignment(.leading)
+                    Text(mission.englishText)
+                        .font(.system(.subheadline, design: .serif))
+                        .foregroundStyle(.secondary)
                         .multilineTextAlignment(.leading)
                     if mission.isCompleted { CompletedStamp().padding(.top, 5) }
                 }

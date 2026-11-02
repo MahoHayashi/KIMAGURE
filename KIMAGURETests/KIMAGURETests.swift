@@ -17,6 +17,25 @@ struct KIMAGURETests {
         #expect(draft.missions.filter { $0.difficulty == .easy }.count == 3)
         #expect(draft.missions.filter { $0.difficulty == .adventure }.count == 2)
         #expect(Set(draft.missions.map(\.text)).count == 5)
+        #expect(draft.missions.allSatisfy { !$0.englishText.isEmpty })
+        #expect(!draft.title.english.isEmpty)
+        #expect(!draft.message.english.isEmpty)
+        #expect(!draft.prediction.english.isEmpty)
+        #expect(!draft.closing.english.isEmpty)
+    }
+
+    @Test func everyJapaneseCandidateHasEnglishTranslation() {
+        let candidates = FortuneGenerator.titles
+            + FortuneGenerator.messages
+            + FortuneGenerator.predictions
+            + FortuneGenerator.closings
+            + FortuneGenerator.easyMissions
+            + FortuneGenerator.adventureMissions
+
+        #expect(candidates.allSatisfy { !$0.japanese.isEmpty && !$0.english.isEmpty })
+        #expect(candidates.allSatisfy {
+            FortuneGenerator.englishTranslation(for: $0.japanese) == $0.english
+        })
     }
 
     @Test func localDayKeyUsesProvidedCalendar() throws {
