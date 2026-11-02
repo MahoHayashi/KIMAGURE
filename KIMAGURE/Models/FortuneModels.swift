@@ -19,6 +19,13 @@ enum MissionDifficulty: String, Codable {
         case .adventure: "ADVENTURE"
         }
     }
+
+    var japaneseLabel: String {
+        switch self {
+        case .easy: "気軽な挑戦"
+        case .adventure: "小さな冒険"
+        }
+    }
 }
 
 @Model
@@ -27,6 +34,7 @@ final class FortuneSession {
     @Attribute(.unique) var localDateKey: String
     var createdAt: Date
     var title: String
+    var englishTitle: String = ""
     @Relationship(deleteRule: .cascade) var cards: [FortuneCard]
     @Relationship(deleteRule: .cascade) var missions: [DailyMission]
 
@@ -35,6 +43,7 @@ final class FortuneSession {
         localDateKey: String,
         createdAt: Date = .now,
         title: String,
+        englishTitle: String = "",
         cards: [FortuneCard],
         missions: [DailyMission]
     ) {
@@ -42,6 +51,7 @@ final class FortuneSession {
         self.localDateKey = localDateKey
         self.createdAt = createdAt
         self.title = title
+        self.englishTitle = englishTitle
         self.cards = cards
         self.missions = missions
     }
@@ -69,7 +79,9 @@ final class FortuneCard {
     var order: Int
     var kindRawValue: String
     var title: String
+    var englishTitle: String = ""
     var body: String
+    var englishBody: String = ""
     var missionID: UUID?
 
     init(
@@ -77,14 +89,18 @@ final class FortuneCard {
         order: Int,
         kind: CardKind,
         title: String,
+        englishTitle: String = "",
         body: String,
+        englishBody: String = "",
         missionID: UUID? = nil
     ) {
         self.id = id
         self.order = order
         self.kindRawValue = kind.rawValue
         self.title = title
+        self.englishTitle = englishTitle
         self.body = body
+        self.englishBody = englishBody
         self.missionID = missionID
     }
 
@@ -98,6 +114,7 @@ final class DailyMission {
     @Attribute(.unique) var id: UUID
     var sourceTemplateID: String
     var text: String
+    var englishText: String = ""
     var difficultyRawValue: String
     var cardOrder: Int
     var isCompleted: Bool
@@ -107,6 +124,7 @@ final class DailyMission {
         id: UUID = UUID(),
         sourceTemplateID: String,
         text: String,
+        englishText: String = "",
         difficulty: MissionDifficulty,
         cardOrder: Int,
         isCompleted: Bool = false,
@@ -115,6 +133,7 @@ final class DailyMission {
         self.id = id
         self.sourceTemplateID = sourceTemplateID
         self.text = text
+        self.englishText = englishText
         self.difficultyRawValue = difficulty.rawValue
         self.cardOrder = cardOrder
         self.isCompleted = isCompleted
