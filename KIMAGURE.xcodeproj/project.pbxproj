@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		174A173D3098F3A700B0F526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 174A17273098F3A500B0F526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 174A172E3098F3A500B0F526;
+			remoteInfo = KIMAGURE;
+		};
+		174A17473098F3A700B0F526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 174A17273098F3A500B0F526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 174A172E3098F3A500B0F526;
+			remoteInfo = KIMAGURE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		174A172F3098F3A500B0F526 /* KIMAGURE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIMAGURE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		174A173C3098F3A700B0F526 /* KIMAGURETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIMAGURETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		174A17463098F3A700B0F526 /* KIMAGUREUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIMAGUREUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		174A17313098F3A500B0F526 /* KIMAGURE */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KIMAGURE;
+			sourceTree = "<group>";
+		};
+		174A173F3098F3A700B0F526 /* KIMAGURETests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KIMAGURETests;
+			sourceTree = "<group>";
+		};
+		174A17493098F3A700B0F526 /* KIMAGUREUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KIMAGUREUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		174A172C3098F3A500B0F526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		174A17393098F3A700B0F526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		174A17433098F3A700B0F526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		174A17263098F3A500B0F526 = {
+			isa = PBXGroup;
+			children = (
+				174A17313098F3A500B0F526 /* KIMAGURE */,
+				174A173F3098F3A700B0F526 /* KIMAGURETests */,
+				174A17493098F3A700B0F526 /* KIMAGUREUITests */,
+				174A17303098F3A500B0F526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		174A17303098F3A500B0F526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				174A172F3098F3A500B0F526 /* KIMAGURE.app */,
+				174A173C3098F3A700B0F526 /* KIMAGURETests.xctest */,
+				174A17463098F3A700B0F526 /* KIMAGUREUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		174A172E3098F3A500B0F526 /* KIMAGURE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174A174E3098F3A700B0F526 /* Build configuration list for PBXNativeTarget "KIMAGURE" */;
+			buildPhases = (
+				174A172B3098F3A500B0F526 /* Sources */,
+				174A172C3098F3A500B0F526 /* Frameworks */,
+				174A172D3098F3A500B0F526 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				174A17313098F3A500B0F526 /* KIMAGURE */,
+			);
+			name = KIMAGURE;
+			productName = KIMAGURE;
+			productReference = 174A172F3098F3A500B0F526 /* KIMAGURE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		174A173B3098F3A700B0F526 /* KIMAGURETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174A17513098F3A700B0F526 /* Build configuration list for PBXNativeTarget "KIMAGURETests" */;
+			buildPhases = (
+				174A17383098F3A700B0F526 /* Sources */,
+				174A17393098F3A700B0F526 /* Frameworks */,
+				174A173A3098F3A700B0F526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174A173E3098F3A700B0F526 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				174A173F3098F3A700B0F526 /* KIMAGURETests */,
+			);
+			name = KIMAGURETests;
+			productName = KIMAGURETests;
+			productReference = 174A173C3098F3A700B0F526 /* KIMAGURETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		174A17453098F3A700B0F526 /* KIMAGUREUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174A17543098F3A700B0F526 /* Build configuration list for PBXNativeTarget "KIMAGUREUITests" */;
+			buildPhases = (
+				174A17423098F3A700B0F526 /* Sources */,
+				174A17433098F3A700B0F526 /* Frameworks */,
+				174A17443098F3A700B0F526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174A17483098F3A700B0F526 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				174A17493098F3A700B0F526 /* KIMAGUREUITests */,
+			);
+			name = KIMAGUREUITests;
+			productName = KIMAGUREUITests;
+			productReference = 174A17463098F3A700B0F526 /* KIMAGUREUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		174A17273098F3A500B0F526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					174A172E3098F3A500B0F526 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					174A173B3098F3A700B0F526 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 174A172E3098F3A500B0F526;
+					};
+					174A17453098F3A700B0F526 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 174A172E3098F3A500B0F526;
+					};
+				};
+			};
+			buildConfigurationList = 174A172A3098F3A500B0F526 /* Build configuration list for PBXProject "KIMAGURE" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 174A17263098F3A500B0F526;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 174A17303098F3A500B0F526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				174A172E3098F3A500B0F526 /* KIMAGURE */,
+				174A173B3098F3A700B0F526 /* KIMAGURETests */,
+				174A17453098F3A700B0F526 /* KIMAGUREUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		174A172D3098F3A500B0F526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		174A173A3098F3A700B0F526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		174A17443098F3A700B0F526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		174A172B3098F3A500B0F526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		174A17383098F3A700B0F526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		174A17423098F3A700B0F526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		174A173E3098F3A700B0F526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 174A172E3098F3A500B0F526 /* KIMAGURE */;
+			targetProxy = 174A173D3098F3A700B0F526 /* PBXContainerItemProxy */;
+		};
+		174A17483098F3A700B0F526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 174A172E3098F3A500B0F526 /* KIMAGURE */;
+			targetProxy = 174A17473098F3A700B0F526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		174A174C3098F3A700B0F526 /* Debug configuration for PBXProject "KIMAGURE" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		174A174D3098F3A700B0F526 /* Release configuration for PBXProject "KIMAGURE" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		174A174F3098F3A700B0F526 /* Debug configuration for PBXNativeTarget "KIMAGURE" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hayashi.mapoko.KIMAGURE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		174A17503098F3A700B0F526 /* Release configuration for PBXNativeTarget "KIMAGURE" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hayashi.mapoko.KIMAGURE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		174A17523098F3A700B0F526 /* Debug configuration for PBXNativeTarget "KIMAGURETests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hayashi.mapoko.KIMAGURETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIMAGURE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KIMAGURE";
+			};
+			name = Debug;
+		};
+		174A17533098F3A700B0F526 /* Release configuration for PBXNativeTarget "KIMAGURETests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hayashi.mapoko.KIMAGURETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIMAGURE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KIMAGURE";
+			};
+			name = Release;
+		};
+		174A17553098F3A700B0F526 /* Debug configuration for PBXNativeTarget "KIMAGUREUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hayashi.mapoko.KIMAGUREUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KIMAGURE;
+			};
+			name = Debug;
+		};
+		174A17563098F3A700B0F526 /* Release configuration for PBXNativeTarget "KIMAGUREUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2377WXD7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hayashi.mapoko.KIMAGUREUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KIMAGURE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		174A172A3098F3A500B0F526 /* Build configuration list for PBXProject "KIMAGURE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174A174C3098F3A700B0F526 /* Debug configuration for PBXProject "KIMAGURE" */,
+				174A174D3098F3A700B0F526 /* Release configuration for PBXProject "KIMAGURE" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		174A174E3098F3A700B0F526 /* Build configuration list for PBXNativeTarget "KIMAGURE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174A174F3098F3A700B0F526 /* Debug configuration for PBXNativeTarget "KIMAGURE" */,
+				174A17503098F3A700B0F526 /* Release configuration for PBXNativeTarget "KIMAGURE" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		174A17513098F3A700B0F526 /* Build configuration list for PBXNativeTarget "KIMAGURETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174A17523098F3A700B0F526 /* Debug configuration for PBXNativeTarget "KIMAGURETests" */,
+				174A17533098F3A700B0F526 /* Release configuration for PBXNativeTarget "KIMAGURETests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		174A17543098F3A700B0F526 /* Build configuration list for PBXNativeTarget "KIMAGUREUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174A17553098F3A700B0F526 /* Debug configuration for PBXNativeTarget "KIMAGUREUITests" */,
+				174A17563098F3A700B0F526 /* Release configuration for PBXNativeTarget "KIMAGUREUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 174A17273098F3A500B0F526 /* Project object */;
+	validationLevel = 1;
+}
