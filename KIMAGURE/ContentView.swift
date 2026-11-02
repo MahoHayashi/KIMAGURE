@@ -6,19 +6,24 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @Environment(\.modelContext) private var modelContext
+    @State private var viewModel: FortuneViewModel?
 
-#Preview {
-    ContentView()
+    var body: some View {
+        Group {
+            if let viewModel {
+                FortuneRootView(viewModel: viewModel)
+            } else {
+                ProgressView()
+                    .task {
+                        viewModel = FortuneViewModel(modelContext: modelContext)
+                    }
+            }
+        }
+        .tint(.black)
+        .preferredColorScheme(.light)
+    }
 }
